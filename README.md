@@ -26,12 +26,12 @@ KEY ACTIVITIES:
 
 TECHNOLOGY USED:
 
- 1.Programming Language: C
+1.Programming Language: C
+
+2.Development Environment: Any C compiler (e.g., GCC)
      
- 2. Development Environment: Any C compiler (e.g., GCC)
+3. Input/Output: Standard input/output functions in C (scanf, printf)
      
- 3. Input/Output: Standard input/output functions in C (scanf, printf)
+4. Data Structures: None (simple variables and arrays are used)
      
- 4. Data Structures: None (simple variables and arrays are used)
-     
- 5. Algorithms: Simple arithmetic operations are used for temperature conversion.
+5. Algorithms: Simple arithmetic operations are used for temperature conversion.
