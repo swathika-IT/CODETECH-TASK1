@@ -1,0 +1,44 @@
+#include <stdio.h>
+float convertTemperature(float temp, int type);
+int main() {
+    int choice;
+    float inputTemp, convertedTemp;
+     printf("Temperature Converter\n");
+    printf("Select the conversion you want to perform:\n");
+    printf("1. Celsius to Fahrenheit\n");
+    printf("2. Celsius to Kelvin\n");
+    printf("3. Fahrenheit to Celsius\n");
+    printf("4. Fahrenheit to Kelvin\n");
+    printf("5. Kelvin to Celsius\n");
+    printf("6. Kelvin to Fahrenheit\n");
+    printf("Enter your choice (1-6): ");
+    scanf("%d", &choice);
+    if (choice < 1 || choice > 6) {
+        printf("Invalid choice! Please run the program again and select a valid option.\n");
+        return 1;
+    }
+    printf("Enter the temperature to convert: ");
+    scanf("%f", &inputTemp);
+    convertedTemp = convertTemperature(inputTemp, choice);
+    const char* labels[][2] = {
+        {"Celsius", "Fahrenheit"},
+        {"Celsius", "Kelvin"},
+        {"Fahrenheit", "Celsius"},
+        {"Fahrenheit", "Kelvin"},
+        {"Kelvin", "Celsius"},
+        {"Kelvin", "Fahrenheit"}
+    };
+    printf("%.2f %s = %.2f %s\n", inputTemp, labels[choice - 1][0], convertedTemp, labels[choice - 1][1]);
+   return 0;
+}
+float convertTemperature(float temp, int type) {
+    switch (type) {
+        case 1: return (temp * 9.0 / 5.0) + 32;
+        case 2: return temp + 273.15;
+        case 3: return (temp - 32) * 5.0 / 9.0;
+        case 4: return (temp - 32) * 5.0 / 9.0 + 273.15;
+        case 5: return temp - 273.15;
+        case 6: return (temp - 273.15) * 9.0 / 5.0 + 32;
+        default: 
+        return temp;}
+}
