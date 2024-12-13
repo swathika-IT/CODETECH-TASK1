@@ -1,7 +1,10 @@
 # CODETECH-TASK1id
 Name:SWATHIKA BHAYYA
+
 company:CODTECH IT SOLUTIONS
+
 ID::CT08DS10239
+
 Duration:DECEMBER 10th, 2024 to JANUARY 10TH,2025
 
 Overview of the project:
